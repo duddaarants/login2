@@ -1,0 +1,52 @@
+CREATE DATABASE IF NOT EXISTS tijolobuster;
+
+USE tijolobuster;
+
+CREATE TABLE clientes
+(
+idcliente INT NOT NULL,
+nomecliente VARCHAR(50) NOT NULL,
+endereco VARCHAR(50) NOT NULL,
+telefone VARCHAR(11) NOT NULL,
+PRIMARY KEY (idcliente)
+);
+
+CREATE TABLE alugueis
+(
+codaluguel INT NOT NULL,
+dataaluguel DATETIME NOT NULL,
+datadevolucao DATETIME NOT NUL,
+idcliente INT NOT NULL,
+PRIMARY KEY (codaluguel),
+CONSTRAINT fk_alugueis FOREIGN KEY (idcliente)
+REFERENCES clientes (idcliente)
+);
+
+CREATE TABLE itensalugados
+(
+codaluguel INT NOT NULL,
+idfilme INT NOT NULL,
+qtdeestoque INT NOT NULL,
+CONSTRAINT fk_itensalugados FOREIGN KEY (codaluguel)
+REFERENCES alugueis (codaluguel)
+);
+
+CREATE TABLE filmes
+(
+idfilme INT NOT NULL,
+titulo VARCHAR(50) NOT NULL,
+genero VARCHAR(50) NOT NULL,
+idioma VARCHAR(40) NOT NULL,
+preco DECIMAL (6,2) NOT NULL,
+PRIMARY KEY (idfilme)
+);
+
+ALTER TABLE clientes
+ADD COLUMN estado VARCHAR(50) NULL;
+
+ALTER TABLE itensalugados
+DROP COLUMN qtdeestoque;
+
+
+
+
