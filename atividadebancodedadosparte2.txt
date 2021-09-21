@@ -1,0 +1,32 @@
+
+INSERT INTO clientes (idcliente, nomecliente, endereco, telefone, estado)
+VALUES (1, 'Alberto Pasqualini', 'Rua do Ouvidor', '3838-4000', 'SP');
+
+INSERT INTO clientes (idcliente, nomecliente, endereco, telefone, estado)
+VALUES (2, 'Emma Goldman', 'Rua Jose Bonifacio', '2244-1000', 'SP');
+
+INSERT INTO clientes (idcliente, nomecliente, endereco, telefone, estado)
+VALUES (3, 'Getulio Vargas', 'Rua Gotemburgo', '3738-8008', 'RJ');
+
+INSERT INTO clientes (idcliente, nomecliente, endereco, telefone, estado)
+VALUES (4, 'John Locke', 'Rua Sao Sebastiao', '5670-6070', 'MG');
+
+INSERT INTO clientes (idcliente, nomecliente, endereco, telefone, estado)
+VALUES (5, 'Nicolau Maquiavel', 'Rua Francisco Eugenio', '3700-8000', 'RJ');
+
+
+
+INSERT INTO filmes (idfilme, titulo, genero, idioma, preco)
+VALUES (1, 'Sherlock Holmes', 'Acao e Aventura', 'ingles', '9.85');
+
+INSERT INTO filmes (idfilme, titulo, genero, idioma, preco)
+VALUES (2, 'Planeta 51', 'Infantil', 'portugues', '4.95');
+
+INSERT INTO filmes (idfilme, titulo, genero, idioma, preco)
+VALUES (3, 'Zumbilandia', 'comedia', 'ingles', '4.95');
+
+INSERT INTO filmes (idfilme, titulo, genero, idioma, preco)
+VALUES (4, 'Bastardos Inglorios', 'Acao e Aventura', 'ingles', '7.50');
+
+INSERT INTO filmes (idfilme, titulo, genero, idioma, preco)
+VALUES (5, 'Alvin e os esquilos 2', 'infantil', 'portugues', '4.95');
